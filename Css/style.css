@@ -198,6 +198,67 @@ border-top:  1px solid rgb(38, 38, 38);
   color: aliceblue;
     opacity: .7;
 }
+/*_________________Why choose TechWave_________*/
+body {
+  background: radial-gradient(circle at top, #2b0a4d, #140020);
+  color: #fff;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: grid;
+  gap: 24px;
+  
+
+  grid-template-areas: 
+  "h2 h2 h2 h2 h2 h2"
+  "card1 card1 card2 card2 card2 card2"
+  "card1 card1 card3 card3 card3 card3"
+  "card4 card4 card4 card4 card4 card4" ;
+
+}
+.container h2{
+  grid-area: h2;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.container>div{
+  background: linear-gradient( #2a0a4f, #1c0038);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.card1{
+  grid-area: card1;
+}
+.card2{
+  grid-area: card2;
+}
+.card3{
+  grid-area: card3;
+}
+.card4{
+  grid-area: card4;
+}
+
+.container img{
+  width: 36px;
+  margin-bottom: 14px;
+}
+
+.container h4{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.conatiner p{
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(246, 245, 244);
+  opacity: .7;
+}
+/*_________________________________*/
 
 
 
@@ -279,7 +340,7 @@ border-top:  1px solid rgb(38, 38, 38);
 
 
 /*Mobile style*/
-@media screen and (max-width:576px){
+@media screen and (max-width:578px){
   .list-style ,.btn-style{
     display: none;
   }
@@ -311,4 +372,30 @@ border-top:  1px solid rgb(38, 38, 38);
    width: 90%;
     margin-top: 15px;
   }
+
+
+  .container {
+    grid-template-areas:
+      "h2"
+      "card1"
+      "card2"
+      "card3"
+      "card4";
+
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 40px 16px;
+  }
+
+  .container h2 {
+    font-size: 26px;
+  }
+
+  .container > div {
+    padding: 24px;
+  }
 }
+
+
