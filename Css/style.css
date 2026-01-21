@@ -408,7 +408,7 @@ body {
 }
 
 .Infos {
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(4, 1fr); 
   gap: 16px;
 }
 
@@ -573,7 +573,10 @@ body {
   flex: 1 1 45%;
   justify-content: center;
 }
-
+.Infos {
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px;
+}
 }
 
 @media screen and (min-width: 579px) and (max-width: 992px){
