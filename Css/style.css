@@ -407,7 +407,22 @@ body {
       
 }
 
+.Infos {
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 16px;
+}
 
+.Info {
+  margin: 10px 0; 
+}
+
+.Info h2 {
+  font-size: 24px;
+}
+
+.Info span {
+  font-size: 13px;
+}
 #footer-text{
   font-size: 35px;
   color: aliceblue;
@@ -516,7 +531,49 @@ body {
     font-size: 28px;
   }
 
- 
+
+ .host-card{
+    flex-direction: column; 
+    text-align: center;
+    padding: 20px;
+  }
+
+  .host-info h3{
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .host-info p{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
+
+
+.footer{
+    padding: 60px 15px 30px;
+  }
+
+  #footer-text{
+    font-size: 24px;
+    padding-bottom: 25px;
+    line-height: 1.4;
+
+  }
+
+  .social-media{
+    display: flex;
+    margin-top: 14px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+.icon-name{
+  flex: 1 1 45%;
+  justify-content: center;
+}
+
 }
 
 @media screen and (min-width: 579px) and (max-width: 992px){
