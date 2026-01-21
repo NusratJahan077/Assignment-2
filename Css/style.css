@@ -368,13 +368,15 @@ body {
 
 .host-info h3 {
   font-size: 2rem;
-  margin:  48px 25px;
+  margin:  38px 25px;
+ 
 }
 
 .host-info p {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom:16px ;
+  margin-top: -20px;
   color: #fff;
   opacity: .7;
 }
@@ -429,6 +431,7 @@ body {
   gap: 32px;
   flex-wrap: wrap;
   margin-bottom: 25px;
+   margin-top: -40px;
 }
 .icon-name{
   
@@ -514,4 +517,21 @@ body {
   }
 
  
+}
+
+@media screen and (min-width: 579px) and (max-width: 992px){
+
+  .navber{
+    padding: 20px 40px;
+  }
+
+  .list-style{
+    gap: 20px;
+    font-size: 15px;
+  }
+  .banner h1{
+    font-size: 44px;
+    margin-bottom: 30px;
+  }
+
 }
