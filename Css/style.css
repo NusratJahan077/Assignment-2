@@ -96,7 +96,8 @@ header{
   position: absolute;
   top: 9px;
   right: 8px;
-  background: #00FF88;
+  background: #1de113;
+  color: black;
   border-radius: 12px;
   font-size: 12px;
   font-weight: 500;
@@ -200,8 +201,10 @@ border-top:  1px solid rgb(38, 38, 38);
 }
 /*_________________Why choose TechWave_________*/
 body {
-  background: radial-gradient(circle at top, #2b0a4d, #140020);
+  background: #1e0536;
   color: #fff;
+ 
+  
 }
 .container{
   max-width: 1100px;
@@ -223,12 +226,16 @@ body {
   text-align: center;
   font-size: 32px;
   margin-bottom: 20px;
+
+ 
 }
 .container>div{
-  background: linear-gradient( #2a0a4f, #1c0038);
+  background: linear-gradient( #300e44, #2d0554);
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+ ;
+  
 }
 .card1{
   grid-area: card1;
@@ -251,42 +258,140 @@ body {
 .container h4{
   font-size: 18px;
   margin-bottom: 10px;
+ 
+ 
 }
-.conatiner p{
-  font-size: 14px;
+.conatainer p{
+  font-size: 10px;
   line-height: 1.6;
-  color: rgb(246, 245, 244);
+ 
+ 
+
+}
+
+/* ===== Featured Episodes Section ===== */
+.featured-episodes{
+  padding: 80px 20px;
+  background:#1A0B2E;
+  color: #fff;
+}
+
+.featured-episodes h2{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.episodes-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.episode-card{
+  background: #2b0c48;
+ padding:20px;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episode-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.episode-card iframe{
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 16px;
+}
+
+.episode-card h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.episode-card p{
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.duration{
+  margin-top: 12px;
+  color: #00ffd5;
+  font-size: 14px;
+  
+}
+/*_________________Host____________________*/
+.host-section {
+ 
+  padding: 50px 20px;
+  color: #fff;
+  text-align: center;
+  
+  
+}
+
+.host-section h2 {
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+ margin-top: 50px;
+  gap: 40px;
+}
+
+.host-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #250e44;
+  border-radius: 30px;
+}
+
+.host-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.host-info {
+  text-align: left;
+}
+
+.host-info h3 {
+  font-size: 2rem;
+  margin:  48px 25px;
+}
+
+.host-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom:16px ;
+  color: #fff;
   opacity: .7;
 }
-/*_________________________________*/
 
+.social-icons a {
+  display: inline-block;
+  border: 1px solid rgb(54, 53, 53);
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+}
 
+.social-icons img {
+  width: 20px;
+  height: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /*footer style*/
@@ -333,7 +438,7 @@ body {
 }
 .copy{
 
-  color:rgb(205, 201, 201) ;
+  color:rgb(191, 180, 180) ;
 }
 
 
@@ -396,6 +501,17 @@ body {
   .container > div {
     padding: 24px;
   }
+  .episodes-container{
+    grid-template-columns: 1fr;
+  }
+
+  .episode-card iframe{
+    height: 180px;
+  }
+
+  .featured-episodes h2{
+    font-size: 28px;
+  }
+
+ 
 }
-
-
